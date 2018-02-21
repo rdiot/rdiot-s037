@@ -1,4 +1,4 @@
-/* Air Quality Sensor (MQ135) [S037] : http://rdiot.tistory.com/110 [RDIoT Demo] */
+0/* Air Quality Sensor (MQ135) [S037] : http://rdiot.tistory.com/110 [RDIoT Demo] */
 
 //edit by Lukas Aldersley
 
@@ -8,11 +8,11 @@
 #include <LiquidCrystal_I2C.h>
 
 //constants
-const int pin = A4;
-const long BAUD = 115200;
+const int pin = A0;
+const long BAUD = 9600;
 
 //objects
-LiquidCrystal_I2C lcd(0x26, 20, 4); // LCD2004
+LiquidCrystal_I2C lcd(0x27, 20, 4); // LCD2004
 MQ135 gasSensor = MQ135(pin);
 
 
